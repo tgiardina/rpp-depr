@@ -1,0 +1,6 @@
+[submodule "rpp_hyp_client"]
+	path = rpp_hyp_client
+	url = git@github.com:tgiardina/rpp_hyp_client.git
+[submodule "rpp_wiki"]
+	path = rpp_wiki
+	url = git@github.com:tgiardina/rpp_wiki.git
