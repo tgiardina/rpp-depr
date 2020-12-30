@@ -20,6 +20,6 @@ RUN apt-get install -y nodejs
 RUN curl -L "https://github.com/docker/compose/releases/download/1.27.4/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
 RUN chmod +x /usr/local/bin/docker-compose
 
-COPY ./rpp_hyp_h .
+COPY ./rpp_h .
 COPY ./await-elastic.sh .
 RUN chmod +x await-elastic.sh

@@ -2,11 +2,11 @@ version: "3.3"
 
 services:
   client:
-    container_name: rpp_hyp_client 
-    build: ./rpp_hyp_client
+    container_name: rpp_sidebar
+    build: ./rpp_sidebar
     command: make dev
     ports:
       - "3000:3000"
       - "3001:3001"    
     volumes:
-      - ./rpp_hyp_client:/usr/src/app
+      - ./rpp-sidebar:/usr/src/app
