@@ -9,6 +9,8 @@ services:
       - h_postgres
       - h_elasticsearch
       - h_rabbit
+    environment:
+      CLIENT_URL: ${SIDEBAR_URL}/hypothesis      
     ports:
       - "127.0.0.1:5000:5000"
 
@@ -41,6 +43,6 @@ services:
     container_name: rpp_h_via    
     environment:
       CHECKMATE_URL: http://example.com
-      H_EMBED_URL: ${CLIENT_URL}/hypothesis      
+      H_EMBED_URL: ${SIDEBAR_URL}/hypothesis      
     ports:
       - "9080:9080"  

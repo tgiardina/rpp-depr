@@ -2,7 +2,7 @@ version: "3.3"
 
 services:
   wiki:
-    container_name: rpp-wiki
+    container_name: rpp_wiki
     build: ./rpp-wiki
     command: yarn dev
     environment:
@@ -16,7 +16,7 @@ services:
     expose:
       - "80"
     volumes:
-      - ./rpp_wiki/:/usr/src/app/          
+      - ./rpp-wiki/:/usr/src/app/          
       - /usr/src/app/node_modules
     depends_on:
       - "db"    

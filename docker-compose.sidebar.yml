@@ -1,8 +1,8 @@
 version: "3.3"
 
 services:
-  client:
-    container_name: rpp-sidebar
+  sidebar:
+    container_name: rpp_sidebar
     build: ./rpp-sidebar
     command: make dev
     ports:
