@@ -5,7 +5,7 @@ help:
 
 .PHONY: dev
 dev: 
-	docker-compose -f docker-compose.wiki.yml -f docker-compose.sidebar.yml -f dev/docker-compose.yml up
+	docker-compose -f docker-compose.wiki.yml -f docker-compose.sidebar.yml -f dev/hypothesis-backend/docker-compose.yml up
 
 .PHONY: dev-wiki
 dev-wiki: 
@@ -13,4 +13,4 @@ dev-wiki:
 
 .PHONY: dev-sidebar
 dev-sidebar: 
-	docker-compose -f docker-compose.sidebar.yml -f dev/docker-compose.yml up
+	docker-compose -f docker-compose.sidebar.yml -f dev/hypothesis-backend/docker-compose.yml up

@@ -3,10 +3,8 @@ services:
   h: 
     network_mode: host
     container_name: rpp_h
-    build:
-      context: ./dev/rpp_hyp_h
-      dockerfile: Dockerfile.dev
-    command: make dev
+    build: ./dev/hypothesis-backend
+    command: bash -c "./await-elastic.sh && make dev"
     depends_on:
       - h_postgres
       - h_elasticsearch

@@ -23,16 +23,6 @@ services:
     links:
       - db:db      
 
-  client:
-    container_name: rpp_hyp_client 
-    build: ./rpp_hyp_client
-    command: make dev
-    ports:
-      - "3000:3000"
-      - "3001:3001"    
-    volumes:
-      - ./rpp_hyp_client:/usr/src/app
-
   db:
     image: postgres
     environment:
