@@ -2,8 +2,8 @@ version: "3.3"
 
 services:
   wiki:
-    container_name: rpp_wiki
-    build: ./rpp_wiki
+    container_name: rpp-wiki
+    build: ./rpp-wiki
     command: yarn dev
     environment:
       VIA_URL: ${VIA_URL}
