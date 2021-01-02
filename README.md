@@ -1,5 +1,5 @@
 # Responsive Policy Project
-An annotatble wiki to make policy more approachable.
+An annotatable wiki to make policy more approachable.
 
 ## Prerequisites
 To get up and running, you will need the following commands: `docker`, `docker-compose`, and `make`. You can install `make` via your favoriate package manager (possibly as part of `build-essentials`). You can install the other two as follows: [docker](https://docs.docker.com/get-docker/), [docker-compose](https://docs.docker.com/compose/install/).
