@@ -5,6 +5,8 @@ services:
     container_name: rpp_sidebar
     build: ./rpp-sidebar
     command: make dev
+    environment:
+      SIDEBAR_APP_URL: http://localhost:5000/app.html
     ports:
       - "3000:3000"
       - "3001:3001"    
